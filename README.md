@@ -5,10 +5,10 @@ This project can crawl your own accepted problems from [SPOJ/PTIT](https://www.s
 ![image](https://i.ibb.co/2hkzfgW/log.png)
 
 ## Prerequisites
-This are some packages you must install.
+This are some packages and an open source tool you must install.
 - pip 
 - venv
-- chrome driver
+- chrome driver (existed in project)
 #### - pip
 ##### on Linux: 
 ```sh
