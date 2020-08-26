@@ -2,7 +2,7 @@
 ![image](https://img.shields.io/badge/python-3.8-blue) ![image](https://img.shields.io/badge/selenium-3.141.0-blue) ![image](https://img.shields.io/badge/beautifulsoup4-4.9.1-blue) ![image](https://img.shields.io/badge/lxml-4.5.2-blue)
 
 This project crawl your own accepted problems from [SPOJ/PTIT](https://www.spoj.com/PT). 
-![image](https://i.ibb.co/hRR60k4/log.png)
+![image](https://i.ibb.co/VwwLLKz/log.png)
 
 ## Prerequisites
 This is an only package management you must install.
