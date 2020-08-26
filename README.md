@@ -41,12 +41,15 @@ $ py -m pip install --user virtualenv
 `$ git clone https://github.com/hoaf13/SPOJ_PTIT_CRAWLER.git`
 2. Open project, create and cctivate your virtual environment
 - create virtual env
+
 **On macOS and Linux:**
 `$ python3 -m venv myenv`
-**On wwindow:**
+
+**On window:**
 `py -m venv myenv`
 - activate virtual env
-`$ source myenv/bin/actiavte`
+`$ source myenv/bin/actiavte
+
 3. Install requirements
 `$ pip install -r requirements.txt`
 
