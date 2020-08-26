@@ -5,7 +5,7 @@ This project can crawl your own accepted problems from [SPOJ/PTIT](https://www.s
 ![image](https://i.ibb.co/2hkzfgW/log.png)
 
 ## Prerequisites
-This is an only package management you must install.
+This are some packages you must install.
 - pip 
 - venv
 - chrome driver
