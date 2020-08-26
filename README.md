@@ -17,12 +17,12 @@ $ sudo apt-get install python-pip
 $ sudo pip install --upgrade pip
 ```
 
-##### on Macos: 
+##### On Macos: 
 ```sh
 $ sudo easy_install pip
 $ sudo pip install --upgrade pip
 ```
-##### on Window: 
+##### On Window: 
 ```sh
 $ sudo apt install python3-pip
 ```
@@ -48,7 +48,7 @@ $ py -m pip install --user virtualenv
 **On window:**
 `py -m venv myenv`
 - activate virtual env
-`$ source myenv/bin/actiavte
+`$ source myenv/bin/actiavte`
 
 3. Install requirements
 `$ pip install -r requirements.txt`
