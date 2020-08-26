@@ -66,7 +66,7 @@ class DriverChrome: # Using selenium
 		index_current_problem = 0
 		for problem in problems:
 			index_current_problem += 1
-			print("problem: {} - processing:{}/{} - percent: {:02.2f}%".format(problem, index_current_problem, len(problems), index_current_problem/len(problems)*100))
+			print("problem: {} - handled:{}/{} - processing: {:02.2f}%".format(problem, index_current_problem, len(problems), index_current_problem/len(problems)*100))
 			url = URL_PROBLEM + problem + ',' + self.username + '/'
 			self.driver.get(url)
 			table = self.driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div[1]/form/table[1]/tbody')

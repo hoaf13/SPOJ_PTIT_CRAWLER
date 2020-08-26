@@ -19,8 +19,8 @@ if __name__ == '__main__':
 
     # main process
     solved_problems, unsolved_problems = scraper.get_problems_list()
-    print("No. of soled: {} - No. unsolved: {}".format(len(solved_problems), len(unsolved_problems)))
-    print("Please Wait ! logining to {} account...".format(USERNAME))
+    print("No. of solved: {} - No. unsolved: {}".format(len(solved_problems), len(unsolved_problems)))
+    print("Please Wait ! accessing to {} account...".format(USERNAME))
     driver.login_spoj()
     print("Start crawling !!!")
     driver.crawl(solved_problems)
