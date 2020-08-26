@@ -49,7 +49,8 @@ $ py -m pip install --user virtualenv
 `$ source myenv/bin/actiavte`
 3. Install requirements
 `$ pip install -r requirements.txt`
-4. Run command 
+
+## USE
 `$ python3 main.py <username> <password>`
 
 All the sources has just been saved in `<username>_sources`.
