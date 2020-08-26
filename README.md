@@ -23,9 +23,8 @@ $ sudo easy_install pip
 $ sudo pip install --upgrade pip
 ```
 ##### On Window: 
-```sh
-$ sudo apt install python3-pip
-```
+follow this: https://phoenixnap.com/kb/install-pip-windows
+
 #### - venv
 ##### On macOS and Linux:
 ```sh
