@@ -30,12 +30,10 @@ $ sudo apt install python3-pip
 ##### On macOS and Linux:
 ```sh
 $ python3 -m pip install --user virtualenv
-$ python3 -m venv myenv
 ```
 ##### On Windows:
 ```sh
 $ py -m pip install --user virtualenv
-$ py -m venv myenv
 ```
 
 ## Installation
