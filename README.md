@@ -5,10 +5,10 @@ This project can crawl your own accepted problems from [SPOJ/PTIT](https://www.s
 ![image](https://i.ibb.co/2hkzfgW/log.png)
 
 ## Prerequisites
-This is an only package management you must install.
+This are some packages and an open source tool you must install.
 - pip 
 - venv
-- chrome driver
+- chrome driver (existed in project)
 #### - pip
 ##### on Linux: 
 ```sh
@@ -17,15 +17,14 @@ $ sudo apt-get install python-pip
 $ sudo pip install --upgrade pip
 ```
 
-##### on Macos: 
+##### On Macos: 
 ```sh
 $ sudo easy_install pip
 $ sudo pip install --upgrade pip
 ```
-##### on Window: 
-```sh
-$ sudo apt install python3-pip
-```
+##### On Window: 
+follow this: https://phoenixnap.com/kb/install-pip-windows
+
 #### - venv
 ##### On macOS and Linux:
 ```sh
@@ -41,12 +40,15 @@ $ py -m pip install --user virtualenv
 `$ git clone https://github.com/hoaf13/SPOJ_PTIT_CRAWLER.git`
 2. Open project, create and cctivate your virtual environment
 - create virtual env
+
 **On macOS and Linux:**
 `$ python3 -m venv myenv`
-**On wwindow:**
+
+**On window:**
 `py -m venv myenv`
 - activate virtual env
 `$ source myenv/bin/actiavte`
+
 3. Install requirements
 `$ pip install -r requirements.txt`
 
