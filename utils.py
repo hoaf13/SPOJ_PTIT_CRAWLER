@@ -5,8 +5,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ChromeOptions
 from time import sleep
 
-URLSPOJ = 'https://www.spoj.com/PTIT/users/'
 
+URLSPOJ = 'https://www.spoj.com/PTIT/users/'
 class Scraper: # Using bs4
 	
 	def __init__(self, username):
@@ -37,19 +37,16 @@ URL_SOURCE = 'https://www.spoj.com/PTIT/files/src/'
 class DriverChrome: # Using selenium
 		
 	def __init__(self, username, password, folder):	
-		self.driver = None
 		self.options = ChromeOptions()
 		self.options.add_argument('headless')
 		self.options.add_argument('window-size=1920x1080')
 		self.options.add_argument("disable-gpu")
+		self.driver = webdriver.Chrome('chromedriver',options=self.options)
 		self.username = username
 		self.password = password
 		self.source_folder = folder 
 
 	def login_spoj(self):
-
-		
-		self.driver = webdriver.Chrome('chromedriver',options=self.options)
 		self.driver.get('https://www.spoj.com/login/')
 		username = self.driver.find_element_by_id('inputUsername')
 		password = self.driver.find_element_by_id('inputPassword')
@@ -97,7 +94,6 @@ class DriverChrome: # Using selenium
 					filez.close()
 					break
 
-	
 	def sleep(self, timesleep):
 		sleep(timesleep)
 
