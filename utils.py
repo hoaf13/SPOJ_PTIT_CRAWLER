@@ -4,7 +4,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ChromeOptions
 from time import sleep
-
+import os
+import numpy as np
 
 URLSPOJ = 'https://www.spoj.com/PTIT/users/'
 class Scraper: # Using bs4
@@ -67,6 +68,9 @@ class DriverChrome: # Using selenium
 			"""That's all I can define"""
 			return ".txt"
 		
+		filenames = os.listdir(self.source_folder)
+		filenames = [str(filename).split('.')[0] for filename in filenames]
+		problems = np.setdiff1d(problems,filenames)
 		index_current_problem = 0
 		for problem in problems:
 			index_current_problem += 1
@@ -75,9 +79,9 @@ class DriverChrome: # Using selenium
 			self.driver.get(url)
 			table = self.driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div/div[1]/form/table[1]/tbody')
 			submissions = table.find_elements_by_tag_name('tr')
-			
-			for submission in submissions:
-				if 'accepted' in submission.text: #get the first accepted submission in a list of submissions.
+			del submissions[0]	
+			for submission in submissions:	
+				if 'accepted' or '100' in submission.text: #get the first accepted submission in a list of submissions.
 					title = str(submission.text).split(' ')
 					# example title: ['25225322', '2020-01-11', '07:09:06', 'Birthdates', 'accepted\nedit', '', 'run', '0.00', '4.7M\nC++\n4.3.2']
 					id = title[0]
