@@ -8,7 +8,7 @@ This project can crawl your own accepted problems from [SPOJ/PTIT](https://www.s
 This are some packages and an open source tool you must install.
 - pip 
 - venv
-- chrome driver (existed in project)
+- chrome driver (existed in project(chrome-driver version 88.) or download the corresponding version of your chrome-browser)
 #### - pip
 ##### on Linux: 
 ```sh
