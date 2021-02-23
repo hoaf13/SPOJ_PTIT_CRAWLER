@@ -42,7 +42,7 @@ class DriverChrome: # Using selenium
 		self.options.add_argument('headless')
 		self.options.add_argument('window-size=1920x1080')
 		self.options.add_argument("disable-gpu")
-		self.driver = webdriver.Chrome('chromedriver',options=self.options)
+		self.driver = webdriver.Chrome('./chromedriver',options=self.options)
 		self.username = username
 		self.password = password
 		self.source_folder = folder 

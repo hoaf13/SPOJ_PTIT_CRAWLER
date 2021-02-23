@@ -23,9 +23,15 @@ if __name__ == '__main__':
     print("Please Wait ! accessing to {} account...".format(USERNAME))
     driver.login_spoj()
     print("Start crawling !!!")
-    driver.crawl(solved_problems)
+
+    existed_problems = os.listdir('./'+SOURCE_FOLDER)
+    existed_problems = [problem.split('.')[0] for problem in existed_problems]
+    new_problems = list(set(existed_problems)^set(solved_problems))
+    print(new_problems)
+    driver.crawl(new_problems)
     
     # Announce
+    
     print("Successfully Crawled")
     TIMECLOSE = 5
     for i in range(TIMECLOSE):
